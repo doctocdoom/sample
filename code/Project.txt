@@ -1,0 +1,11 @@
+function billingFunction(){
+  var same = document.getElementById("same").checked;
+  if(same){
+    document.getElementById("billingName").value = document.getElementById("shippingName").value;
+    document.getElementById("billingZip").value = document.getElementById("shippingZip").value;
+  }
+  else {
+    document.getElementById("billingName").value = '';
+    document.getElementById("billingZip").value = '';
+  }
+}

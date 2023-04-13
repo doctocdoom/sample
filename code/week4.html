@@ -1,0 +1,27 @@
+`<div hidden>
+  <ul>
+    <li>
+      <img src="photo-one.jpg" alt="photo one">
+    </li>
+    <li>
+      <img src="photo-two.jpg" alt="photo two">
+    </li>
+    <!-- more photos -->
+  </ul>
+</div>
+
+<!-- checkbox/radio button -->
+<input type="checkbox" onchange="this.checked ? showPhotos() : hidePhotos()">
+
+<script>
+  // define function to show photos
+  function showPhotos() {
+    document.querySelector('div').removeAttribute('hidden');
+  }
+
+  // define function to hide photos
+  function hidePhotos() {
+    document.querySelector('div').setAttribute('hidden', true);
+  }
+</script>
+`
